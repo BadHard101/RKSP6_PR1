@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import photo from "./assets/IMG_6765.svg"
+import photo from "./assets/photo1.jpg"
 import ListItem from "./components/ListItem"
 import Button from './components/Button.jsx'
 import { items, skills } from './data.js'
