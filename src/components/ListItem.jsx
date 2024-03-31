@@ -1,8 +1,8 @@
-export default function ListItem({title, desc}) {
+export default function ListItem(props) {
   return (
     <p>
-      <strong>{title}: </strong>
-      {desc}
+      <strong>{props.title}: </strong>
+      {props.desc}
     </p>
   )
 }

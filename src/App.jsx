@@ -1,41 +1,21 @@
-import { useState } from 'react'
-import photo from "./assets/photo1.jpg"
-import ListItem from "./components/ListItem"
-import Button from './components/Button.jsx'
-import { items, skills } from './data.js'
 import './App.css'
+import Header from "./components/Header/Header.jsx";
+import {Route, Routes} from "react-router-dom";
+import Home from "./components/Pages/Home.jsx";
+import Prac2 from "./components/Pages/Prac2/Prac2.jsx";
+import Prac1 from "./components/Pages/Prac1/Prac1.jsx";
+import Prac3 from "./components/Pages/Prac3/Prac3.jsx";
 
 function App() {
-  const [content, setContent] = useState('Нажми на кнопку')
-
-  function handleClick(type) {
-    setContent(type)
-  }
   return (
     <>
-      <h1>РКСП - Практическая работа №2</h1>
-      <div>
-        <img src={photo} className="Photo" alt="Author Photo" />
-        <div>
-          <ul>
-            <ListItem {...items[0]}></ListItem>
-            <ListItem {...items[1]}></ListItem>
-            <ListItem {...items[2]}></ListItem>
-            <ListItem {...items[3]}></ListItem>
-          </ul>
-        </div>
-      </div>
-      
-      <div>
-        <h3>Чему я научился?</h3>
-
-        <Button onClick={() => handleClick('skill1')}>Приложение</Button>
-        <Button onClick={() => handleClick('skill2')}>Компоненты</Button>
-        <Button onClick={() => handleClick('skill3')}>Data.js</Button>
-        <Button onClick={() => handleClick('skill4')}>Хук useState</Button>
-
-        <p>{skills[content]}</p>
-      </div>
+      <Header />
+        <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/prac1" element={<Prac1/>} />
+            <Route path="/prac2" element={<Prac2/>} />
+            <Route path="/prac3" element={<Prac3/>} />
+        </Routes>
     </>
   )
 }

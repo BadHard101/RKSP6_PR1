@@ -1,0 +1,18 @@
+.prac2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+}
+
+.Photo {
+    width: 350px; /* Регулируйте размер фото по вашему усмотрению */
+    height: auto;
+    float: left; /* Помещаем фото слева */
+    margin-right: 20px; /* Пространство между фото и списком */
+}
+
+.ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внутренний отступ у списка */
+}

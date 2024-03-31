@@ -19,10 +19,12 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  align-items: flex-start;
 }
 
 div {
   min-height: 280px;
+  width: 100%;
 }
 
 h1 {
@@ -35,22 +37,7 @@ p {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  margin: 1em
 }
 
 @media (prefers-color-scheme: light) {
@@ -64,20 +51,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-
-.Photo {
-  width: 260px; /* Регулируйте размер фото по вашему усмотрению */
-  height: auto;
-  float: left; /* Помещаем фото слева */
-  margin-right: 20px; /* Пространство между фото и списком */
-}
-
-ul {
-  list-style-type: none; /* Убираем маркеры списка */
-  padding: 0; /* Убираем внутренний отступ у списка */
-}
-
-Button {
-  margin: 0px 10px;
 }
