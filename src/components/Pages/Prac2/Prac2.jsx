@@ -31,11 +31,10 @@ export default function Prac2() {
 
             <div>
                 <h3>Чему я научился?</h3>
-
-                    <Button isActive={content === 'skill1'} onClick={() => handleClick('skill1')}>Приложение</Button>
-                    <Button isActive={content === 'skill2'} onClick={() => handleClick('skill2')}>Компоненты</Button>
-                    <Button isActive={content === 'skill3'} onClick={() => handleClick('skill3')}>Data.js</Button>
-                    <Button isActive={content === 'skill4'} onClick={() => handleClick('skill4')}>Хук useState</Button>
+                    <Button style={{margin: '1em'}} isActive={content === 'skill1'} onClick={() => handleClick('skill1')}>Приложение</Button>
+                    <Button style={{margin: '1em'}} isActive={content === 'skill2'} onClick={() => handleClick('skill2')}>Компоненты</Button>
+                    <Button style={{margin: '1em'}} isActive={content === 'skill3'} onClick={() => handleClick('skill3')}>Data.js</Button>
+                    <Button style={{margin: '1em'}} isActive={content === 'skill4'} onClick={() => handleClick('skill4')}>Хук useState</Button>
                 <p>{skills[content]}</p>
             </div>
         </div>
