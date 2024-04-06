@@ -43,4 +43,8 @@ export const pracs = [
         name: 'Практика 4',
         path: '/prac4'
     },
+    {
+        name: 'Практика 5',
+        path: '/prac5'
+    },
 ]

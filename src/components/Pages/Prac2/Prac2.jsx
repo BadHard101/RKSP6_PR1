@@ -1,6 +1,6 @@
 import {useState} from "react";
 import photo from "../../../assets/photo1.jpg";
-import ListItem from "../../ListItem.jsx";
+import ListItem from "./ListItem.jsx";
 import {items, skills} from "../../../data.js";
 import Button from "../../Button/Button.jsx";
 import classes from './Prac2.module.css'
