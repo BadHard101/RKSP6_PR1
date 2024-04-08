@@ -6,6 +6,7 @@ import {useState} from "react";
 
 export default function Header() {
     const [pracState, setPracState] = useState('')
+
     function handlePracChange(name) {
         setPracState(name)
     }
