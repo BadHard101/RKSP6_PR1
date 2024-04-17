@@ -9,6 +9,7 @@ import Prac4 from "./components/Pages/Prac4/Prac4.jsx";
 import {Provider} from "react-redux";
 import store from "./redux/store.js";
 import AgreementForm from "./components/Pages/Prac5/AgreementForm.jsx";
+import LoginForm from "./components/Pages/Prac6/LoginForm.jsx";
 
 function App() {
     return (
@@ -25,6 +26,8 @@ function App() {
                         <AgreementForm/>
                     </Provider>
                 }/>
+
+                <Route path="/login" element={<LoginForm />} />
             </Routes>
         </>
     )
