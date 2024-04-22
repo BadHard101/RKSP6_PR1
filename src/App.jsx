@@ -7,7 +7,7 @@ import Prac2 from "./components/Pages/Prac2/Prac2.jsx";
 import Prac3 from "./components/Pages/Prac3/Prac3.jsx";
 import Prac4 from "./components/Pages/Prac4/Prac4.jsx";
 import {Provider} from "react-redux";
-import store from "./redux/store.js";
+import {store} from "./store/index.jsx";
 import AgreementForm from "./components/Pages/Prac5/AgreementForm.jsx";
 import LoginForm from "./components/Pages/Prac6/LoginForm.jsx";
 
